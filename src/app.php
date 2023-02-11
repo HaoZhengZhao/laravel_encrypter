@@ -3,11 +3,6 @@
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Finder\SplFileInfo;
-use Symfony\Component\Dotenv\Dotenv;
-
-$dotenv = new Dotenv('APP_ENV');
-$dotenv->usePutenv();
-$dotenv->load(__DIR__ . '/../.env');
 
 $application = new Application('sorry510', '0.0.1');
 $finder = new Finder();
